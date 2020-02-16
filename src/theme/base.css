@@ -1,0 +1,13 @@
+a:link {
+  color: var(--color-link);
+}
+
+a:visited {
+  color: var(--color-brand-primary-lighter)
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--color-brand-primary-darker);
+}
