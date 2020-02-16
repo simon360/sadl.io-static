@@ -1,0 +1,40 @@
+:root {
+  /**
+   * Base colors. Do not use directly.
+   */
+  --color-base-black: rgb(0, 0, 0);
+
+  --color-base-purple-lighter: rgb(149, 117, 188);
+  --color-base-purple: rgb(98, 66, 137);
+  --color-base-purple-darker: rgb(47, 15, 86);
+
+  --color-base-white: rgb(255, 255, 255);
+
+  /**
+   * Descriptive colors. Add as necessary, derive from bases.
+   */
+  --color-text: var(--color-base-black);
+
+  --color-link: var(--color-base-purple);
+  --color-link-visited: var(--color-base-purple-lighter);
+  --color-link-active: var(--color-base-purple-darker);
+
+  --color-brand-primary: var(--color-base-purple);
+  --color-brand-primary-darker: var(--color-base-purple-darker);
+  --color-brand-primary-lighter: var(--color-base-purple-lighter);
+}
+
+:global(.DarkSurface) {
+  /**
+   * Colors used when on top of a dark background.
+   */
+  --color-text: var(--color-base-white);
+
+  --color-link: var(--color-base-white);
+  --color-link-visited: var(--color-base-white);
+  --color-link-active: var(--color-base-white);
+
+  --color-brand-primary: var(--color-base-white);
+  --color-brand-primary-darker: var(--color-base-white);
+  --color-brand-primary-lighter: var(--color-base-white);
+}
