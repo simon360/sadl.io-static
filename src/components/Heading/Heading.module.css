@@ -1,0 +1,19 @@
+.sm {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h4);
+}
+
+.md {
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-h3);
+}
+
+.lg {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h2);
+}
+
+.xl {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h1);
+}
