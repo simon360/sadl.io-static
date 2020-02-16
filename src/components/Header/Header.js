@@ -5,11 +5,15 @@ import React from "react"
 import Section from "../Section"
 import Surface from "../Surface"
 
+import { title } from "./Header.module.css"
+
 const Header = ({ siteTitle }) => (
   <header>
     <Surface backgroundColorType="brand-primary">
       <Section verticalPadding="1rem">
-        <Link to="/">{siteTitle}</Link>
+        <Link className={title} to="/">
+          {siteTitle}
+        </Link>
       </Section>
     </Surface>
   </header>
