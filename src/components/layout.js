@@ -11,6 +11,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import "normalize.css"
 
 import Header from "./header"
+import "../theme/index.css"
+
 import Section from "./Section"
 
 const Layout = ({ children }) => {
