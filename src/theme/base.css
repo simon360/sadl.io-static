@@ -1,13 +1,37 @@
-body {
-  font-family: 'Source Sans Pro', sans-serif;
+/**
+ * Keep this file minimal. Almost all styles should be component-scoped, to
+ * preserve semantic elements wherever possible.
+
+/**
+ * Set up better box-sizing, so that elements are less likely to create annoying
+ * off-by-one overflows, etc.
+ */
+html {
+  box-sizing: border-box;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/**
+ * Default font family
+ */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/**
+ * Basic link styles
+ */
 a:link {
   color: var(--color-link);
 }
 
 a:visited {
-  color: var(--color-brand-primary-lighter)
+  color: var(--color-brand-primary-lighter);
 }
 
 a:hover,
