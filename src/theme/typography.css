@@ -5,15 +5,31 @@
   --font-size-scale-multiplier: 1.25;
   --font-size-base: 1rem;
 
-  --font-size-base-down-1: calc(var(--font-size-base) / var(--font-size-scale-multiplier));
-  --font-size-base-down-2: calc(var(--font-size-base-down-1) / var(--font-size-scale-multiplier));
-  --font-size-base-down-3: calc(var(--font-size-base-down-2) / var(--font-size-scale-multiplier));
-  --font-size-base-down-4: calc(var(--font-size-base-down-3) / var(--font-size-scale-multiplier));
+  --font-size-base-down-1: calc(
+    var(--font-size-base) / var(--font-size-scale-multiplier)
+  );
+  --font-size-base-down-2: calc(
+    var(--font-size-base-down-1) / var(--font-size-scale-multiplier)
+  );
+  --font-size-base-down-3: calc(
+    var(--font-size-base-down-2) / var(--font-size-scale-multiplier)
+  );
+  --font-size-base-down-4: calc(
+    var(--font-size-base-down-3) / var(--font-size-scale-multiplier)
+  );
 
-  --font-size-base-up-1: calc(var(--font-size-base) * var(--font-size-scale-multiplier));
-  --font-size-base-up-2: calc(var(--font-size-base-up-1) * var(--font-size-scale-multiplier));
-  --font-size-base-up-3: calc(var(--font-size-base-up-2) * var(--font-size-scale-multiplier));
-  --font-size-base-up-4: calc(var(--font-size-base-up-3) * var(--font-size-scale-multiplier));
+  --font-size-base-up-1: calc(
+    var(--font-size-base) * var(--font-size-scale-multiplier)
+  );
+  --font-size-base-up-2: calc(
+    var(--font-size-base-up-1) * var(--font-size-scale-multiplier)
+  );
+  --font-size-base-up-3: calc(
+    var(--font-size-base-up-2) * var(--font-size-scale-multiplier)
+  );
+  --font-size-base-up-4: calc(
+    var(--font-size-base-up-3) * var(--font-size-scale-multiplier)
+  );
 
   --font-size-page-title: var(--font-size-base-up-3);
 

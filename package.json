@@ -31,7 +31,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format": "prettier --write \"**/*.{css,js,jsx,json,md}\"",
     "start": "yarn develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
