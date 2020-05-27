@@ -3,7 +3,7 @@ import React from "react"
 
 import classnames from "class-names"
 
-import { light, brandPrimary } from "./Surface.module.css"
+import { brandPrimary, light, muted } from "./Surface.module.css"
 
 const darkColors = ["brand-primary"]
 
@@ -12,6 +12,7 @@ const Surface = ({ backgroundColorType, children }) => (
     className={classnames({
       [brandPrimary]: backgroundColorType === "brand-primary",
       [light]: backgroundColorType === "light",
+      [muted]: backgroundColorType === "muted",
       DarkSurface: darkColors.includes(backgroundColorType),
     })}
   >
@@ -23,7 +24,7 @@ Surface.propTypes = {
   /**
    * The type of color to use as a background.
    */
-  backgroundColorType: PropTypes.oneOf(["light", "brand-primary"]),
+  backgroundColorType: PropTypes.oneOf(["light", "brand-primary", "muted"]),
 
   /**
    * Children to render.

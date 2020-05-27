@@ -11,6 +11,19 @@
   --color-base-white: rgb(255, 255, 255);
 
   /**
+   * Neutrals. Base colors, but can be used directly.
+   */
+  --color-neutral-100: rgb(229, 229, 229);
+  --color-neutral-200: rgb(203, 203, 203);
+  --color-neutral-300: rgb(177, 177, 177);
+  --color-neutral-400: rgb(151, 151, 151);
+  --color-neutral-500: rgb(125, 125, 125);
+  --color-neutral-600: rgb(99, 99, 99);
+  --color-neutral-700: rgb(63, 63, 63);
+  --color-neutral-800: rgb(37, 37, 37);
+  --color-neutral-900: rgb(11, 11, 11);
+
+  /**
    * Descriptive colors. Add as necessary, derive from bases.
    */
   --color-text: var(--color-base-black);
