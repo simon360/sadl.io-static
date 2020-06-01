@@ -13,6 +13,10 @@ export default function IndexPage() {
         edges {
           node {
             company
+            logo {
+              type
+              src
+            }
             positions {
               time
               title
@@ -31,20 +35,45 @@ export default function IndexPage() {
         <p>It’s a website. On The Internet.</p>
 
         <ul>
-          {data.allWorkJson.edges.map(({ node: { company, positions } }) => (
-            <li key={company}>
-              <Heading element="h2" type="md">
-                {company}
-              </Heading>
-              <ul>
-                {positions.map(({ time, title }) => (
-                  <li key={time}>
-                    <strong>{title}</strong>, {time}
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
+          {data.allWorkJson.edges.map(
+            ({
+              node: {
+                company,
+                logo: { type: logoType, src: logoSrc },
+                positions,
+              },
+            }) => (
+              <li key={company}>
+                {logoType &&
+                  logoSrc &&
+                  (function () {
+                    if (logoType === "raster") {
+                      return (
+                        <img
+                          src={require(`../images/${logoSrc}`)}
+                          style={{ maxWidth: "200px" }}
+                        />
+                      )
+                    } else {
+                      const Logo = require(`../images/${logoSrc}`)
+                      return (
+                        <Logo height={null} style={{ maxWidth: "200px" }} />
+                      )
+                    }
+                  })()}
+                <Heading element="h2" type="md">
+                  {company}
+                </Heading>
+                <ul>
+                  {positions.map(({ time, title }) => (
+                    <li key={time}>
+                      <strong>{title}</strong>, {time}
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            )
+          )}
         </ul>
       </Section>
     </Layout>

@@ -1,6 +1,10 @@
 [
   {
     "company": "HubbleHQ",
+    "logo": {
+      "type": "vector",
+      "src": "logo-hubblehq.svg"
+    },
     "positions": [
       {
         "title": "Engineering Manager",
@@ -22,6 +26,10 @@
   },
   {
     "company": "Thomson Reuters",
+    "logo": {
+      "type": "vector",
+      "src": "logo-thomson-reuters.svg"
+    },
     "positions": [
       {
         "title": "Web Developer (contractor)",
@@ -31,6 +39,10 @@
   },
   {
     "company": "Effortless Admin",
+    "logo": {
+      "type": "vector",
+      "src": "logo-effortless-admin.svg"
+    },
     "positions": [
       {
         "title": "Web Developer",
@@ -40,6 +52,10 @@
   },
   {
     "company": "Olympia Trust Company",
+    "logo": {
+      "type": "raster",
+      "src": "logo-olympia-trust-company.png"
+    },
     "positions": [
       {
         "title": ".NET Developer (intern)",
@@ -49,6 +65,10 @@
   },
   {
     "company": "Celtx",
+    "logo": {
+      "type": "vector",
+      "src": "logo-celtx.svg"
+    },
     "positions": [
       {
         "title": "Developer (intern)",
@@ -58,6 +78,10 @@
   },
   {
     "company": "Neowin.net",
+    "logo": {
+      "type": "vector",
+      "src": "logo-neowin.svg"
+    },
     "positions": [
       {
         "title": "Developer (part time)",
