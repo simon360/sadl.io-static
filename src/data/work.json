@@ -1,0 +1,68 @@
+[
+  {
+    "company": "HubbleHQ",
+    "positions": [
+      {
+        "title": "Engineering Manager",
+        "time": "January 2020 - Current"
+      },
+      {
+        "title": "Lead Product Engineer",
+        "time": "July 2019 - January 2020"
+      },
+      {
+        "title": "Product Engineer",
+        "time": "March 2019 - July 2019"
+      },
+      {
+        "title": "Product Engineer (contractor)",
+        "time": "November 2018 - March 2019"
+      }
+    ]
+  },
+  {
+    "company": "Thomson Reuters",
+    "positions": [
+      {
+        "title": "Web Developer (contractor)",
+        "time": "March 2016 - October 2018"
+      }
+    ]
+  },
+  {
+    "company": "Effortless Admin",
+    "positions": [
+      {
+        "title": "Web Developer",
+        "time": "May 2015 - March 2016"
+      }
+    ]
+  },
+  {
+    "company": "Olympia Trust Company",
+    "positions": [
+      {
+        "title": ".NET Developer (intern)",
+        "time": "Summers 2013 and 2014"
+      }
+    ]
+  },
+  {
+    "company": "Celtx",
+    "positions": [
+      {
+        "title": "Developer (intern)",
+        "time": "Summers 2008, 2010, 2011 and 2012"
+      }
+    ]
+  },
+  {
+    "company": "Neowin.net",
+    "positions": [
+      {
+        "title": "Developer (part time)",
+        "time": "December 2007 - January 2011"
+      }
+    ]
+  }
+]
