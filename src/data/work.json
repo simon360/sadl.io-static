@@ -1,6 +1,8 @@
 [
   {
     "company": "HubbleHQ",
+    "brandColor": "#FF377A",
+    "isFocus": true,
     "logo": {
       "type": "vector",
       "src": "logo-hubblehq.svg"
@@ -26,6 +28,8 @@
   },
   {
     "company": "Thomson Reuters",
+    "brandColor": "#E6772B",
+    "isFocus": true,
     "logo": {
       "type": "vector",
       "src": "logo-thomson-reuters.svg"
@@ -39,6 +43,7 @@
   },
   {
     "company": "Effortless Admin",
+    "brandColor": "#1B9AD6",
     "logo": {
       "type": "vector",
       "src": "logo-effortless-admin.svg"
@@ -52,6 +57,7 @@
   },
   {
     "company": "Olympia Trust Company",
+    "brandColor": "#AC8A2E",
     "logo": {
       "type": "raster",
       "src": "logo-olympia-trust-company.png"
@@ -65,6 +71,7 @@
   },
   {
     "company": "Celtx",
+    "brandColor": "#000000",
     "logo": {
       "type": "vector",
       "src": "logo-celtx.svg"
@@ -78,6 +85,7 @@
   },
   {
     "company": "Neowin.net",
+    "brandColor": "#1E5078",
     "logo": {
       "type": "vector",
       "src": "logo-neowin.svg"
