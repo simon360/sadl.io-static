@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `SADL`,
-    description: `SADL: web development by Simon Andrews`,
+    title: `Simon Andrews`,
+    description: `Engineering Manager/Product Engineer based in London, UK`,
     author: `@simon360`,
   },
   plugins: [
