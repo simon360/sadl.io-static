@@ -1,0 +1,31 @@
+.xs {
+  margin-bottom: calc(1rem / 4);
+}
+
+.sm {
+  margin-bottom: calc(1rem / 2);
+}
+
+.md {
+  margin-bottom: 1rem;
+}
+
+.lg {
+  margin-bottom: calc(1rem * 1.5);
+}
+
+.xl {
+  margin-bottom: calc(1rem * 2);
+}
+
+.xxl {
+  margin-bottom: calc(1rem * 3);
+}
+
+.xxxl {
+  margin-bottom: calc(1rem * 4);
+}
+
+.xxxxl {
+  margin-bottom: calc(1rem * 6);
+}
