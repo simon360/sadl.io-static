@@ -1,0 +1,41 @@
+.wrapper {
+  align-items: center;
+  background-color: white;
+  border-top: 1px solid;
+  display: grid;
+  grid-column-gap: 1rem;
+  grid-template-columns: 3fr 1fr;
+  list-style: none;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0 1rem;
+}
+
+.wrapper.isFocus {
+  grid-column: span 2;
+}
+
+.logoWrapper {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.logo {
+  object-fit: contain;
+  object-position: right top;
+  max-width: calc(1rem * 12);
+  height: calc(1rem * 3);
+}
+
+.position {
+  list-style: none;
+}
+
+.positionsWrapper {
+  padding: 0;
+}
+
+.wrapper.isFocus .positionsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+}
