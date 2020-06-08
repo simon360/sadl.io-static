@@ -11,12 +11,7 @@
   --font-size-base-down-2: calc(
     var(--font-size-base-down-1) / var(--font-size-scale-multiplier)
   );
-  --font-size-base-down-3: calc(
-    var(--font-size-base-down-2) / var(--font-size-scale-multiplier)
-  );
-  --font-size-base-down-4: calc(
-    var(--font-size-base-down-3) / var(--font-size-scale-multiplier)
-  );
+  /* Going further than 2 steps down gets into itty-bitty-terribly-unreadable territory. */
 
   --font-size-base-up-1: calc(
     var(--font-size-base) * var(--font-size-scale-multiplier)
