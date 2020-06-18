@@ -78,6 +78,17 @@ export const Space = () => (
           In the rare circumstances where the spacing primitives do not suffice,
           use whole-number rem values.
         </Paragraph>
+
+        <Paragraph>
+          This spacing system is loosely based on{" "}
+          <a
+            href="https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62"
+            target="_blank"
+          >
+            Space in Design Systems
+          </a>
+          , with various adaptations from my own experiences using space.
+        </Paragraph>
       </Section>
     </Surface>
 
