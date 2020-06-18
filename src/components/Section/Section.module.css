@@ -1,5 +1,5 @@
 .section {
   margin: 0 auto;
-  max-width: 74.5rem;
-  padding: 0.5rem;
+  max-width: 74.5rem; /* 1192px */
+  padding: var(--space-sm);
 }

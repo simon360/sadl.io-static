@@ -3,12 +3,14 @@ import React from "react"
 
 import { section } from "./Section.module.css"
 
-const Section = ({ children, verticalPadding = "0rem" }) => (
+const Section = ({ children, verticalPadding = null }) => (
   <div
     className={section}
     style={{
-      paddingBottom: verticalPadding,
-      paddingTop: verticalPadding,
+      paddingBottom:
+        (verticalPadding && `var(--space-${verticalPadding})`) || "0rem",
+      paddingTop:
+        (verticalPadding && `var(--space-${verticalPadding})`) || "0rem",
     }}
   >
     {children}
