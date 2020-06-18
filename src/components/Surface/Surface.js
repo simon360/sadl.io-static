@@ -3,17 +3,33 @@ import React from "react"
 
 import classnames from "class-names"
 
-import { brandPrimary, light, muted } from "./Surface.module.css"
+import {
+  brandPrimary,
+  brandSecondary,
+  light,
+  muted,
+  sticky,
+} from "./Surface.module.css"
 
 const darkColors = ["brand-primary"]
 
-const Surface = ({ backgroundColorType, children }) => (
+const Surface = ({
+  backgroundColorType,
+  foregroundColorType,
+  isSticky = false,
+  children,
+}) => (
   <div
     className={classnames({
       [brandPrimary]: backgroundColorType === "brand-primary",
+      [brandSecondary]: backgroundColorType === "brand-secondary",
       [light]: backgroundColorType === "light",
       [muted]: backgroundColorType === "muted",
-      DarkSurface: darkColors.includes(backgroundColorType),
+      DarkSurface:
+        foregroundColorType === "light" ||
+        darkColors.includes(backgroundColorType),
+
+      [sticky]: isSticky,
     })}
   >
     {children}
@@ -24,7 +40,17 @@ Surface.propTypes = {
   /**
    * The type of color to use as a background.
    */
-  backgroundColorType: PropTypes.oneOf(["light", "brand-primary", "muted"]),
+  backgroundColorType: PropTypes.oneOf([
+    "light",
+    "brand-primary",
+    "brand-secondary",
+    "muted",
+  ]),
+
+  /**
+   * The foreground color, if overriding the default for the background color
+   */
+  foregroundColorType: PropTypes.oneOf(["light", "dark"]),
 
   /**
    * Children to render.
