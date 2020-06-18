@@ -29,12 +29,15 @@ export default function Job({
         <Heading element="h2" type="md">
           {company}
         </Heading>
-        <VerticalSpacing size="sm" />
+        <VerticalSpacing size="md" />
 
         <ul className={positionsWrapper}>
           {positions.map(({ time, title }) => (
             <li key={time} className={position}>
-              <strong>{title}</strong>, {time}
+              <div>
+                <strong>{title}</strong>
+              </div>
+              <div>{time}</div>
             </li>
           ))}
         </ul>
