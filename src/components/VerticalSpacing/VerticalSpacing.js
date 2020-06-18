@@ -9,7 +9,7 @@ import {
   xl,
   xxl,
   xxxl,
-  xxxxl,
+  mega,
 } from "./VerticalSpacing.module.css"
 
 export default function VerticalSpacing({ size }) {
@@ -23,7 +23,7 @@ export default function VerticalSpacing({ size }) {
         [xl]: size === "xl",
         [xxl]: size === "xxl",
         [xxxl]: size === "xxxl",
-        [xxxxl]: size === "xxxxl",
+        [mega]: size === "mega",
       })}
     />
   )

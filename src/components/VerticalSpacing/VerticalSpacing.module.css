@@ -1,31 +1,31 @@
 .xs {
-  margin-bottom: calc(1rem / 4);
+  margin-bottom: var(--space-xs);
 }
 
 .sm {
-  margin-bottom: calc(1rem / 2);
+  margin-bottom: var(--space-sm);
 }
 
 .md {
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-md);
 }
 
 .lg {
-  margin-bottom: calc(1rem * 1.5);
+  margin-bottom: var(--space-lg);
 }
 
 .xl {
-  margin-bottom: calc(1rem * 2);
+  margin-bottom: var(--space-xl);
 }
 
 .xxl {
-  margin-bottom: calc(1rem * 3);
+  margin-bottom: var(--space-xxl);
 }
 
 .xxxl {
-  margin-bottom: calc(1rem * 4);
+  margin-bottom: var(--space-xxxl);
 }
 
-.xxxxl {
-  margin-bottom: calc(1rem * 6);
+.mega {
+  margin-bottom: var(--space-mega);
 }
