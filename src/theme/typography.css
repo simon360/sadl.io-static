@@ -32,4 +32,6 @@
   --font-size-h2: var(--font-size-base-up-3);
   --font-size-h3: var(--font-size-base-up-2);
   --font-size-h4: var(--font-size-base);
+
+  --font-size-lead: var(--font-size-base-up-1);
 }
