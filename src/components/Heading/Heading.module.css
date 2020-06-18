@@ -2,13 +2,17 @@
   margin: 0;
 }
 
+.centered {
+  text-align: center;
+}
+
 .sm {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-h4);
 }
 
 .md {
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-h3);
 }
 

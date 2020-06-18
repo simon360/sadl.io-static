@@ -2,9 +2,9 @@ import classnames from "class-names"
 import PropTypes from "prop-types"
 import React from "react"
 
-import { wrapper, sm, md, lg, xl } from "./Heading.module.css"
+import { wrapper, centered, sm, md, lg, xl } from "./Heading.module.css"
 
-const Heading = ({ children, element, type }) => {
+const Heading = ({ children, isCentered, element, type }) => {
   const Element = element
 
   return (
@@ -14,6 +14,8 @@ const Heading = ({ children, element, type }) => {
         [md]: type === "md",
         [lg]: type === "lg",
         [xl]: type === "xl",
+
+        [centered]: isCentered,
       })}
     >
       {children}
