@@ -20,7 +20,8 @@ html {
  * Default font family
  */
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  color: var(--color-text);
+  font-family: "Inter", sans-serif;
 }
 
 /**
