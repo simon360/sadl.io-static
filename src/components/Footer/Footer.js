@@ -1,53 +1,103 @@
+import PropTypes from "prop-types"
 import React from "react"
-import { ArrowUp, GitHub, Instagram, Linkedin, Twitter } from "react-feather"
+import { ArrowUp } from "react-feather"
 
 import Section from "../Section"
 import Surface from "../Surface"
 import TextWithIcon from "../TextWithIcon"
 
-import { link, links, wrapper } from "./Footer.module.css"
+import SubFooter from "./components/SubFooter"
+import { wrapper } from "./Footer.module.css"
 
+/**
+ * The site footer. Offers functionality that may be useful for users that have
+ * reached the bottom of the page. Attempt to catch them if they're lost, and
+ * direct them to other relevant content.
+ */
 export default function Footer({
-  links: { github, instagram, linkedin, twitter },
+  contactInfo,
+  siteLinks = [],
+  socialLinks = [],
 }) {
+  const showSubFooter =
+    contactInfo ||
+    (siteLinks && siteLinks.length > 0) ||
+    (socialLinks && socialLinks.length > 0)
+
   return (
     <footer>
+      {showSubFooter && (
+        <SubFooter
+          contactInfo={contactInfo}
+          siteLinks={siteLinks}
+          socialLinks={socialLinks}
+        />
+      )}
+
       <Surface backgroundColorType="brand-primary">
         <Section verticalPadding="lg">
           <div className={wrapper}>
             <span>© {new Date().getFullYear()}</span>
-            <ul className={links}>
-              <li className={link}>
-                <a href={github}>
-                  <GitHub />
-                </a>
-              </li>
-              <li className={link}>
-                <a href={linkedin}>
-                  <Linkedin />
-                </a>
-              </li>
-              <li className={link}>
-                <a href={instagram}>
-                  <Instagram />
-                </a>
-              </li>
-              <li className={link}>
-                <a href={twitter}>
-                  <Twitter />
-                </a>
-              </li>
-              <li className={link}>
-                <a href="#top">
-                  <TextWithIcon iconAlignment="end" icon={ArrowUp}>
-                    Top of page
-                  </TextWithIcon>
-                </a>
-              </li>
-            </ul>
+            <a href="#top">
+              <TextWithIcon iconAlignment="end" icon={ArrowUp}>
+                Top of page
+              </TextWithIcon>
+            </a>
           </div>
         </Section>
       </Surface>
     </footer>
   )
+}
+
+Footer.propTypes = {
+  /**
+   * A brief blurb detailing how best to get in touch.
+   */
+  contactInfo: PropTypes.node,
+
+  /**
+   * A list of top-level site links
+   */
+  siteLinks: PropTypes.arrayOf(
+    PropTypes.shape({
+      /**
+       * The title. Briefly describe the page the user would land on.
+       */
+      title: PropTypes.string.isRequired,
+
+      /**
+       * Where the link should point.
+       */
+      url: PropTypes.string.isRequired,
+    })
+  ),
+
+  /**
+   * A list of social links
+   */
+  socialLinks: PropTypes.arrayOf(
+    PropTypes.shape({
+      /**
+       * The title. Text shown within the link. Good place to add extra detail, like a username.
+       */
+      title: PropTypes.string.isRequired,
+
+      /**
+       * The type of link; normally the host of a social profile
+       */
+      type: PropTypes.oneOf([
+        "github",
+        "instagram",
+        "linkedin",
+        "twitter",
+        "other",
+      ]).isRequired,
+
+      /**
+       * Where the link should point
+       */
+      url: PropTypes.string.isRequired,
+    })
+  ),
 }
