@@ -24,9 +24,18 @@ Section.propTypes = {
   children: PropTypes.node,
 
   /**
-   * The amount of padding to add at the top and bottom. Should be in `rem`s.
+   * The amount of padding to add at the top and bottom.
    */
-  verticalPadding: PropTypes.string,
+  verticalPadding: PropTypes.oneOf([
+    "xs",
+    "sm",
+    "md",
+    "lg",
+    "xl",
+    "xxl",
+    "xxxl",
+    "mega",
+  ]),
 }
 
 export default Section
