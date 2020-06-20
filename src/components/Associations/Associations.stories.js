@@ -2,14 +2,14 @@ import React from "react"
 
 import Section from "../Section"
 
-import Jobs, { Job } from "."
+import Associations, { Association } from "."
 
 export default {
-  title: "Components|Jobs",
+  title: "Components|Associations",
 }
 
 export const Single = ({ isFocus } = { isFocus: false }) => (
-  <Job
+  <Association
     isFocus={isFocus}
     brandColor="#592695"
     company="Simon Andrews Development Limited"
@@ -40,7 +40,7 @@ export const Single = ({ isFocus } = { isFocus: false }) => (
 )
 
 export const SingleWithRasterLogo = ({ isFocus } = { isFocus: false }) => (
-  <Job
+  <Association
     isFocus={isFocus}
     brandColor="#ff8000"
     company="A Space Company"
@@ -71,11 +71,11 @@ export const SingleWithRasterLogo = ({ isFocus } = { isFocus: false }) => (
 
 export const Grid = () => (
   <Section>
-    <Jobs>
+    <Associations>
       <Single isFocus />
       <SingleWithRasterLogo />
       <Single />
       <SingleWithRasterLogo isFocus />
-    </Jobs>
+    </Associations>
   </Section>
 )

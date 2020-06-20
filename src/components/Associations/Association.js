@@ -12,9 +12,13 @@ import {
   positionsWrapper,
   title,
   wrapper,
-} from "./Job.module.css"
+} from "./Association.module.css"
 
-export default function Job({
+/**
+ * An association between the subject and an external organization. For example,
+ * a job and position(s) held, or details about education.
+ */
+export default function Association({
   brandColor,
   company,
   isFocus: isFocusProp,
@@ -66,7 +70,7 @@ export default function Job({
   )
 }
 
-Job.propTypes = {
+Association.propTypes = {
   /**
    * The color of the brand for this association
    */
