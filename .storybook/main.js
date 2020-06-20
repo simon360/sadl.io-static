@@ -24,6 +24,11 @@ module.exports = {
           require.resolve("babel-plugin-remove-graphql-queries"),
         ]
       }
+
+      if (config.module.rules[i].test.test("file.svg")) {
+        // Allow SVG to be handled by svg-react-loader
+        config.module.rules[i].exclude = [/\.svg$/]
+      }
     }
 
     // Add in CSS module support
@@ -40,6 +45,14 @@ module.exports = {
           },
         },
       ],
+    })
+
+    // Add in SVG element support
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: {
+        loader: "svg-react-loader",
+      },
     })
 
     // Prefer Gatsby ES6 entrypoint (module) over commonjs (main) entrypoint
