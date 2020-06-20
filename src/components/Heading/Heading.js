@@ -4,7 +4,7 @@ import React from "react"
 
 import { wrapper, centered, sm, md, lg, xl } from "./Heading.module.css"
 
-const Heading = ({ children, isCentered, element, type }) => {
+const Heading = ({ children, isCentered, element = "h2", type = "lg" }) => {
   const Element = element
 
   return (
@@ -32,7 +32,12 @@ Heading.propTypes = {
   /**
    * The base HTML element type to use
    */
-  element: PropTypes.oneOf(["h1", "h2", "h3", "h4", "span"]).isRequired,
+  element: PropTypes.oneOf(["h1", "h2", "h3", "h4", "span"]),
+
+  /**
+   * Center the text?
+   */
+  isCentered: PropTypes.bool,
 
   /**
    * The style to apply
