@@ -21,18 +21,14 @@
 }
 
 .navList {
-  display: inline;
+  display: inline-block;
   list-style: none;
-  padding: 0;
-  margin-right: var(--space-lg);
+  margin: 0 var(--space-lg) 0 0;
+  padding: var(--space-sm) 0;
 }
 
 .navList:last-child {
   margin-right: 0;
-}
-
-.navWrapper {
-  padding: var(--space-sm) 0;
 }
 
 .wrapper {

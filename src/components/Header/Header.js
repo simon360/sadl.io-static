@@ -51,7 +51,8 @@ export default function Header({ siteLinks, siteTitle = ``, socialLinks }) {
           <Link className={title} to="/">
             {siteTitle}
           </Link>
-          <nav className={navWrapper}>
+
+          <nav>
             {siteLinks && siteLinks.length > 0 && (
               <ul className={navList}>
                 {siteLinks.map(({ title, url }) => (
