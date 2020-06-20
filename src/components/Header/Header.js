@@ -5,14 +5,7 @@ import { Linkedin, GitHub, Instagram, Twitter, User } from "react-feather"
 
 import Section from "../Section"
 
-import {
-  title,
-  navIcon,
-  navLink,
-  navList,
-  navWrapper,
-  wrapper,
-} from "./Header.module.css"
+import { title, navIcon, navLink, navList, wrapper } from "./Header.module.css"
 
 /**
  * Given a social media network name as a string, returns an appropriate icon

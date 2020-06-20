@@ -1,10 +1,13 @@
 import React from "react"
 
 import Heading from "../Heading"
+import Hero from "../Hero"
 import Paragraph from "../Paragraph"
 import Section from "../Section"
 import Surface from "../Surface"
 import VerticalSpacing from "../VerticalSpacing"
+
+import snow from "../../images/hero-snow.jpg"
 
 import Header from "."
 
@@ -88,4 +91,34 @@ export const TransparentOnLight = () => (
 
 export const TransparentOnMuted = () => (
   <Transparent backgroundColorType="muted" />
+)
+
+export const TransparentInAHero = () => (
+  <Hero
+    background={
+      <img
+        alt=""
+        src={snow}
+        style={{
+          height: "100%",
+          objectFit: "cover",
+          width: "100%",
+        }}
+      />
+    }
+  >
+    <Header
+      siteLinks={siteLinks}
+      siteTitle="Simon Andrews"
+      socialLinks={socialLinks}
+    />
+    <Section verticalPadding="xl">
+      <Heading element="h2" type="xl">
+        Hello, world
+      </Heading>
+      <VerticalSpacing size="md" />
+      <Paragraph isLead>Perhaps there's some other content here.</Paragraph>
+      <VerticalSpacing size="xl" />
+    </Section>
+  </Hero>
 )
