@@ -64,9 +64,9 @@
   /**
    * Colors used when on top of a dark background.
    */
-  --color-text: var(--color-neutral-lightest);
+  --color-text: var(--color-base-white);
 
-  --color-link: var(--color-neutral-lightest);
-  --color-link-visited: var(--color-neutral-lightest);
-  --color-link-active: var(--color-neutral-lightest);
+  --color-link: var(--color-base-white);
+  --color-link-visited: var(--color-base-white);
+  --color-link-active: var(--color-base-white);
 }
