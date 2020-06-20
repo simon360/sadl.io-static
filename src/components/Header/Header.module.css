@@ -1,4 +1,43 @@
 .title {
   font-size: var(--font-size-page-title);
   font-weight: var(--font-weight-bold);
+  margin-right: var(--space-lg);
+  padding: var(--space-sm) 0;
+}
+
+.navIcon {
+  vertical-align: middle;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.navLink {
+  display: inline;
+  margin-right: var(--space-sm);
+}
+
+.navLink:last-child {
+  margin-right: 0;
+}
+
+.navList {
+  display: inline;
+  list-style: none;
+  padding: 0;
+  margin-right: var(--space-lg);
+}
+
+.navList:last-child {
+  margin-right: 0;
+}
+
+.navWrapper {
+  padding: var(--space-sm) 0;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
