@@ -58,6 +58,8 @@
   --color-brand-secondary: var(--color-base-secondary);
   --color-brand-secondary-darker: var(--color-base-secondary-darker);
   --color-brand-secondary-darkest: var(--color-brand-secondary-darkest);
+
+  --color-logo-outline: var(--color-brand-primary);
 }
 
 .DarkSurface {
@@ -69,4 +71,6 @@
   --color-link: var(--color-base-white);
   --color-link-visited: var(--color-base-white);
   --color-link-active: var(--color-base-white);
+
+  --color-logo-outline: var(--color-base-white);
 }
