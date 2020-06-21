@@ -1,8 +1,18 @@
+/**
+ * 1. One size up on the typographic scale
+ */
+
 .title {
   font-size: var(--font-size-page-title);
   font-weight: var(--font-weight-bold);
   margin-right: var(--space-lg);
   padding: var(--space-sm) 0;
+}
+
+.titleLogo {
+  height: 1.25em; /* 1 */
+  margin-right: 0.25em;
+  vertical-align: middle;
 }
 
 .navIcon {

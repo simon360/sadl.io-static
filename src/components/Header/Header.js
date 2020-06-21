@@ -3,9 +3,17 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Linkedin, GitHub, Instagram, Twitter, User } from "react-feather"
 
+import Logo from "../Logo"
 import Section from "../Section"
 
-import { title, navIcon, navLink, navList, wrapper } from "./Header.module.css"
+import {
+  title,
+  titleLogo,
+  navIcon,
+  navLink,
+  navList,
+  wrapper,
+} from "./Header.module.css"
 
 /**
  * Given a social media network name as a string, returns an appropriate icon
@@ -42,6 +50,7 @@ export default function Header({ siteLinks, siteTitle = ``, socialLinks }) {
       <Section verticalPadding="md">
         <div className={wrapper}>
           <Link className={title} to="/">
+            <Logo isTextMatched className={titleLogo} />
             {siteTitle}
           </Link>
 
