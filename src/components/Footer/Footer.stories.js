@@ -11,7 +11,7 @@ export default {
 const contactInfo = (
   <Paragraph>
     You can get in touch with me at{" "}
-    <a href="mailto:contact@sadl.io">contact@sadl.io</a>, or via my social media
+    <a href="mailto:hello@sadl.io">hello@sadl.io</a>, or via my social media
     profiles. I am not currently looking for new work.
   </Paragraph>
 )
