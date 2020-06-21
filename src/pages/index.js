@@ -1,12 +1,13 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Heading from "../components/Heading"
 import Associations, { Association } from "../components/Associations"
+import Heading from "../components/Heading"
 import Layout from "../components/Layout"
+import Paragraph from "../components/Paragraph"
 import Section from "../components/Section"
 import SEO from "../components/seo"
-import Paragraph from "../components/Paragraph"
+import Skills, { Skill } from "../components/Skills"
 import VerticalSpacing from "../components/VerticalSpacing"
 
 function AssociationFromJson({ logo, ...node }) {
@@ -53,6 +54,10 @@ export default function IndexPage() {
               title
             }
           }
+          skills {
+            isFocus
+            name
+          }
           education {
             brandColor
             company
@@ -72,7 +77,7 @@ export default function IndexPage() {
     }
   `)
 
-  const { education, leadText, work } = data.file.childDataJson
+  const { education, leadText, skills, work } = data.file.childDataJson
 
   return (
     <Layout isHeroHeader heroContent={<Section></Section>}>
@@ -107,6 +112,21 @@ export default function IndexPage() {
               <AssociationFromJson key={node.company} {...node} />
             ))}
           </Associations>
+        </section>
+        <VerticalSpacing size="xxxl" />
+
+        <section>
+          <Heading element="h2" isCentered type="lg">
+            Skills
+          </Heading>
+          <VerticalSpacing size="xl" />
+          <Skills>
+            {skills.map(({ name, isFocus }) => (
+              <Skill key={name} isFocus={isFocus || false}>
+                {name}
+              </Skill>
+            ))}
+          </Skills>
         </section>
         <VerticalSpacing size="xxxl" />
 

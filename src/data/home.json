@@ -128,5 +128,41 @@
         }
       ]
     }
+  ],
+  "skills": [
+    { "name": "Software Development", "isFocus": true },
+    { "name": "Documentation" },
+    { "name": "Agile" },
+    { "name": "Testing (unit, integration, e2e)" },
+    { "name": "Components" },
+    { "name": "Design systems" },
+    { "name": "Web", "isFocus": true },
+    { "name": "HTML5" },
+    { "name": "CSS" },
+    { "name": "BEM" },
+    { "name": "A11y" },
+    { "name": "JavaScript", "isFocus": true },
+    { "name": "React" },
+    { "name": "Next.js" },
+    { "name": "Jest" },
+    { "name": "Build tools", "isFocus": true },
+    { "name": "Webpack" },
+    { "name": "Babel" },
+    { "name": "PostCSS" },
+    { "name": "Server-side rendering" },
+    { "name": "Back-end", "isFocus": true },
+    { "name": "Node.js" },
+    { "name": ".NET (C#)" },
+    { "name": "Python" },
+    { "name": "PHP" },
+    { "name": "Java" },
+    { "name": "SQL (various)" },
+    { "name": "ORM" },
+    { "name": "Management", "isFocus": true },
+    { "name": "One-to-ones" },
+    { "name": "Career development" },
+    { "name": "Hiring" },
+    { "name": "Project management" },
+    { "name": "Relationship building" }
   ]
 }
