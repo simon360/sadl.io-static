@@ -4,7 +4,7 @@ module.exports = {
     title: `Simon Andrews`,
     description: `Engineering Manager/Product Engineer based in London, UK`,
     author: `@simon360`,
-    baseUrl: process.env.BASE_URL || "https://simonandrews.ca",
+    baseUrl: process.env.BASE_URL || "https://www.simonandrews.ca",
 
     siteLinks: [{ title: "CV", url: "/" }],
     socialLinks: [
