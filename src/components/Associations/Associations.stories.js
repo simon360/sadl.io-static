@@ -13,6 +13,7 @@ export const Single = ({ isFocus } = { isFocus: false }) => (
     isFocus={isFocus}
     brandColor="#592695"
     company="Simon Andrews Development Limited"
+    href="https://sadl.io"
     positions={[
       {
         title: "Chief Executive Oeufficer",

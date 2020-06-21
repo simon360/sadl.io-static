@@ -21,6 +21,7 @@ import {
 export default function Association({
   brandColor,
   company,
+  href,
   isFocus: isFocusProp,
   logo: logoProp,
   positions,
@@ -32,7 +33,13 @@ export default function Association({
     >
       <div className={title}>
         <Heading element="h2" type="md">
-          {company}
+          {href ? (
+            <a href={href} rel="noopener noreferrer">
+              {company}
+            </a>
+          ) : (
+            company
+          )}
         </Heading>
       </div>
 
@@ -80,6 +87,11 @@ Association.propTypes = {
    * The name of the company in this association
    */
   company: PropTypes.string.isRequired,
+
+  /**
+   * A link to the company's website
+   */
+  href: PropTypes.string,
 
   /**
    * Is this association highlighted/emphasized in its display?
