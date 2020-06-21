@@ -6,7 +6,6 @@
  */
 
 import { useStaticQuery, graphql } from "gatsby"
-import { join } from "path"
 import PropTypes from "prop-types"
 import React from "react"
 import { Helmet } from "react-helmet"
@@ -28,10 +27,10 @@ function SEO({ description, image, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const metaOgImage = join(
-    site.siteMetadata.baseUrl,
-    image || require("../images/social-image.png")
-  )
+  const metaOgImage = new URL(
+    image || require("../images/social-image.png"),
+    site.siteMetadata.baseUrl
+  ).toString()
 
   return (
     <Helmet
