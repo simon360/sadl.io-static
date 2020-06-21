@@ -32,7 +32,7 @@ export default function Association({
       style={{ borderColor: brandColor }}
     >
       <div className={title}>
-        <Heading element="h2" type="md">
+        <Heading element="h3" type="md">
           {href ? (
             <a href={href} rel="noopener noreferrer">
               {company}
@@ -69,7 +69,7 @@ export default function Association({
             <div>
               <strong>{title}</strong>
             </div>
-            <div>{time}</div>
+            <time>{time}</time>
           </li>
         ))}
       </ul>
